@@ -41,3 +41,16 @@ def login():
             return createJWT(auth.username, os.environ["JWT_SECRET"], True)
     else:
         return "invalid credentials", 401
+
+
+def createJWT(username, secret, authz):
+    return jwt.encode(
+        {
+            'username': username,
+            'exp': datetime.datetime.now(tz=datetime.timezone.utc) + datetime.timedelta(days=1),
+            'iat': datetime.datetime.utcnow(), # when token is administered
+            'admin': authz,
+        },
+        secret,
+        algorithm="HS256",
+    )
