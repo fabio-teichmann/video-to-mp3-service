@@ -1,0 +1,26 @@
+astroid @ file:///Users/runner/miniforge3/conda-bld/astroid_1682340370959/work
+blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1681349778161/work
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
+dill @ file:///home/conda/feedstock_root/build_artifacts/dill_1666603105584/work
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1682966527207/work
+Flask-MySQLdb==1.0.1
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1682176699712/work
+isort @ file:///home/conda/feedstock_root/build_artifacts/isort_1675033873689/work
+itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1648147185463/work
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1669134318875/work
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/work
+lazy-object-proxy @ file:///Users/runner/miniforge3/conda-bld/lazy-object-proxy_1672877875257/work
+MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1674135977284/work
+mccabe @ file:///home/conda/feedstock_root/build_artifacts/mccabe_1643049622439/work
+mysqlclient @ file:///opt/concourse/worker/volumes/live/3e2c08bc-c6d4-44b9-6985-8c1059f99ec2/volume/mysqlclient_1609786255460/work
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1683850015520/work
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1683676063469/work
+pylint @ file:///home/conda/feedstock_root/build_artifacts/pylint_1683397482155/work
+tomli @ file:///home/conda/feedstock_root/build_artifacts/tomli_1644342247877/work
+tomlkit @ file:///home/conda/feedstock_root/build_artifacts/tomlkit_1683028165096/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1678559861143/work
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1683636301408/work
+wrapt @ file:///Users/runner/miniforge3/conda-bld/wrapt_1677485687171/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work
