@@ -22,3 +22,9 @@ fs = gridfs.GridFS(mongo.db)
 # reference host for gateway queue
 connection = pika.BlockingConnection(pika.ConnectionParameters("rabbitmq"))
 channel = connection.channel()
+
+@server.route("/login", methods=["POST"])
+def login():
+    # communicate with auth service to log user in
+    # and assign token to user
+    token, err = access.login(request)
