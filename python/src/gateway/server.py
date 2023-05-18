@@ -28,3 +28,8 @@ def login():
     # communicate with auth service to log user in
     # and assign token to user
     token, err = access.login(request)
+
+    if not err:
+        return token
+    else:
+        return err
