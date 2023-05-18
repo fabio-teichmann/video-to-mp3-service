@@ -33,3 +33,28 @@ def login():
         return token
     else:
         return err
+    
+
+@server.route("/upload", methods=["POST"])
+def upload():
+    access, err = validate.token(request)
+    if err:
+        return "invalid credentials", 401
+
+    access = json.loads(access)
+
+    if access["admin"]:
+        if len(request.files) != 1:
+            return "exactly 1 file required", 400
+        
+        for _, file in request.files.items():
+            err = util.upload(file, fs, channel, access)
+
+            if err:
+                return err
+            
+        return "success", 200
+    
+    else:
+        # user is not authorized
+        return "not authorized", 401
