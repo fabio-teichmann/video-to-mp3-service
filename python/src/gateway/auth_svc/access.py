@@ -13,6 +13,6 @@ def login(request):
     )
     
     if response.status_code == 200:
-        return response.text, None
+        return response.txt, None
     else:
         return None, (response.txt, response.status_code)
