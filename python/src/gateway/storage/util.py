@@ -1,7 +1,8 @@
 import pika, json
 
 def upload(file, fs, channel, access):
-    """
+    """This functions fulfills the following tasks:
+    
     1. upload file to Mongo DB
     2. put message on RabbitMQ so that downstream services get notified and can process
     3. create asynchronous gateway service between user upload and response
