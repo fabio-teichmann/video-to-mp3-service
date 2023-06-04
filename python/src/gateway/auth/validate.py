@@ -10,7 +10,7 @@ def token(request):
     
     response = requests.post(
         f"http://{os.environ.get('AUTH_SVC_ADDRESS')}/validate",
-        headers={"Authoriyzation": token}
+        headers={"Authorization": token}
     )
 
     if response.status_code == 200:
