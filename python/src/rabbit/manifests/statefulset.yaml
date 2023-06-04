@@ -23,13 +23,14 @@ spec:
               protocol: TCP
               containerPort: 5672
           envFrom:
-            - configMap:
+            - configMapRef:
                 name: rabbitmq-configmap
             - secretRef:
                 name: rabbitmq-secret
-          volumneMounts:
-            - mountsPath: "/var/lib/rabbitmq" # persists data here
+          volumeMounts:
+            - mountPath: "/var/lib/rabbitmq" # persists data here
               name: rabbitmq-volume
-      volumnes:
+      volumes:
         - name: rabbitmq-volume
-          persistentVolumeClaim: rabbitmq-pvc
+          persistentVolumeClaim:
+            claimName: rabbitmq-pvc
