@@ -2,13 +2,13 @@ import json
 import os
 import tempfile
 
-from moviepy.config import change_settings
-
-change_settings({"FFMPEG_BINARY": "/usr/bin/ffmpeg"})
-
 import moviepy.editor
 import pika
 from bson.objectid import ObjectId
+
+# from moviepy.config import change_settings
+
+# change_settings({"FFMPEG_BINARY": "/usr/bin/ffmpeg"})
 
 
 def start(message, fs_videos, fs_mp3s, channel):
