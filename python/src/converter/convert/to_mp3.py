@@ -1,6 +1,15 @@
-import pika, json, tempfile, os 
-from bson.objectid import ObjectId
+import json
+import os
+import tempfile
+
 import moviepy.editor
+import pika
+from bson.objectid import ObjectId
+
+# from moviepy.config import change_settings
+
+# change_settings({"FFMPEG_BINARY": "/usr/bin/ffmpeg"})
+
 
 def start(message, fs_videos, fs_mp3s, channel):
     message = json.loads(message)
